@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ERROR_CODE_NOT_APPLIED = exports.ERROR_CODE_TOO_MANY_REQUESTS = exports.ERROR_CODE_CONTENT_TOO_LARGE = exports.ERROR_CODE_TIMEOUT = exports.ERROR_CODE_CANCELED = exports.ERROR_CODE_FORBIDDEN = exports.ERROR_CODE_UNKNOWN = exports.ERROR_CODE_USED_UP = exports.ERROR_CODE_BAD_REQUEST = exports.ERROR_CODE_API_ERROR = exports.ERROR_CODE_BUSY = exports.ERROR_CODE_DUPLICATION = void 0;
+exports.ERROR_CODE_DUPLICATION = 'duplication';
+exports.ERROR_CODE_BUSY = 'busy';
+exports.ERROR_CODE_API_ERROR = 'api_error';
+exports.ERROR_CODE_BAD_REQUEST = 'bad_request';
+exports.ERROR_CODE_USED_UP = 'used_up';
+exports.ERROR_CODE_UNKNOWN = 'unknown';
+exports.ERROR_CODE_FORBIDDEN = 'forbidden';
+exports.ERROR_CODE_CANCELED = 'canceled';
+exports.ERROR_CODE_TIMEOUT = 'timeout';
+exports.ERROR_CODE_CONTENT_TOO_LARGE = 'content_too_large';
+exports.ERROR_CODE_TOO_MANY_REQUESTS = 'too_many_requests';
+exports.ERROR_CODE_NOT_APPLIED = 'not_applied';

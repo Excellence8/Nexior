@@ -1,0 +1,45 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.MidjourneyImagineState = exports.MidjourneyVideosAction = exports.MidjourneyImagineAction = void 0;
+var MidjourneyImagineAction;
+(function (MidjourneyImagineAction) {
+    MidjourneyImagineAction["GENERATE"] = "generate";
+    MidjourneyImagineAction["UPSCALE1"] = "upscale1";
+    MidjourneyImagineAction["UPSCALE2"] = "upscale2";
+    MidjourneyImagineAction["UPSCALE3"] = "upscale3";
+    MidjourneyImagineAction["UPSCALE4"] = "upscale4";
+    MidjourneyImagineAction["VARIATION1"] = "variation1";
+    MidjourneyImagineAction["VARIATION2"] = "variation2";
+    MidjourneyImagineAction["VARIATION3"] = "variation3";
+    MidjourneyImagineAction["VARIATION4"] = "variation4";
+    MidjourneyImagineAction["VARIATION_STRONG"] = "variation_strong";
+    MidjourneyImagineAction["VARIATION_SUBTLE"] = "variation_subtle";
+    MidjourneyImagineAction["UPSCALE_SUBTLE"] = "upscale_subtle";
+    MidjourneyImagineAction["UPSCALE_CREATIVE"] = "upscale_creative";
+    MidjourneyImagineAction["ZOOM_OUT_2X"] = "zoom_out_2x";
+    MidjourneyImagineAction["ZOOM_OUT_1_5X"] = "zoom_out_1_5x";
+    MidjourneyImagineAction["SQUARE"] = "square";
+    MidjourneyImagineAction["PAN_LEFT"] = "pan_left";
+    MidjourneyImagineAction["PAN_UP"] = "pan_up";
+    MidjourneyImagineAction["PAN_DOWN"] = "pan_down";
+    MidjourneyImagineAction["PAN_RIGHT"] = "pan_right";
+    MidjourneyImagineAction["REROLL"] = "reroll";
+    MidjourneyImagineAction["UPSCALE_2X"] = "upscale_2x";
+    MidjourneyImagineAction["UPSCALE_4X"] = "upscale_4x";
+    MidjourneyImagineAction["REDO_UPSCALE_2X"] = "redo_upscale_2x";
+    MidjourneyImagineAction["REDO_UPSCALE_4X"] = "redo_upscale_4x";
+    MidjourneyImagineAction["REDO_UPSCALE_SUBTLE"] = "redo_upscale_subtle";
+    MidjourneyImagineAction["REDO_UPSCALE_CREATIVE"] = "redo_upscale_creative";
+})(MidjourneyImagineAction || (exports.MidjourneyImagineAction = MidjourneyImagineAction = {}));
+var MidjourneyVideosAction;
+(function (MidjourneyVideosAction) {
+    MidjourneyVideosAction["GENERATE"] = "generate";
+    MidjourneyVideosAction["EXTEND"] = "extend";
+})(MidjourneyVideosAction || (exports.MidjourneyVideosAction = MidjourneyVideosAction = {}));
+var MidjourneyImagineState;
+(function (MidjourneyImagineState) {
+    MidjourneyImagineState["PENDING"] = "pending";
+    MidjourneyImagineState["GENERATING"] = "generating";
+    MidjourneyImagineState["FINISHED"] = "finished";
+    MidjourneyImagineState["FAILED"] = "failed";
+})(MidjourneyImagineState || (exports.MidjourneyImagineState = MidjourneyImagineState = {}));

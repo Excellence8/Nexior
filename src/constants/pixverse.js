@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.PIXVERSE_DEFAULT_ASPECT_RATIO = exports.PIXVERSE_DEFAULT_QUALITY = exports.PIXVERSE_DEFAULT_MOTION = exports.PIXVERSE_DEFAULT_DURATION = exports.PIXVERSE_DEFAULT_STYLE = exports.PIXVERSE_DEFAULT_MODEL = exports.PIXVERSE_SERVICE_ID = void 0;
+exports.PIXVERSE_SERVICE_ID = '74e74695-ceff-49d1-ac84-cfa876225ae8';
+exports.PIXVERSE_DEFAULT_MODEL = 'v3.5';
+exports.PIXVERSE_DEFAULT_STYLE = '';
+exports.PIXVERSE_DEFAULT_DURATION = 5;
+exports.PIXVERSE_DEFAULT_MOTION = 'normal';
+exports.PIXVERSE_DEFAULT_QUALITY = '540p';
+exports.PIXVERSE_DEFAULT_ASPECT_RATIO = '16:9';

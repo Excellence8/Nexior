@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.KLING_DEFAULT_CFG_SCALE = exports.KLING_DEFAULT_INGREDIENTS = exports.KLING_DEFAULT_ASPECT_RATIO = exports.KLING_DEFAULT_MODE = exports.KLING_DEFAULT_DURATION = exports.KLING_DEFAULT_MODEL = exports.KLING_SERVICE_ID = void 0;
+exports.KLING_SERVICE_ID = '3369e077-2500-4263-86c7-cae0f0e7e843';
+exports.KLING_DEFAULT_MODEL = 'kling-v1';
+exports.KLING_DEFAULT_DURATION = 5;
+exports.KLING_DEFAULT_MODE = 'std';
+exports.KLING_DEFAULT_ASPECT_RATIO = '1:1';
+exports.KLING_DEFAULT_INGREDIENTS = false;
+exports.KLING_DEFAULT_CFG_SCALE = 0;

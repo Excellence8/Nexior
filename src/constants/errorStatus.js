@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.ERROR_STATUS_BUSY = exports.ERROR_STATUS_TIMEOUT = exports.ERROR_STATUS_API_ERROR = exports.ERROR_STATUS_NOT_FOUND = exports.ERROR_STATUS_TOO_MANY_REQUESTS = exports.ERROR_STATUS_FORBIDDEN = exports.ERROR_STATUS_BAD_REQUEST = void 0;
+exports.ERROR_STATUS_BAD_REQUEST = 400;
+exports.ERROR_STATUS_FORBIDDEN = 403;
+exports.ERROR_STATUS_TOO_MANY_REQUESTS = 429;
+exports.ERROR_STATUS_NOT_FOUND = 404;
+exports.ERROR_STATUS_API_ERROR = 500;
+exports.ERROR_STATUS_TIMEOUT = 504;
+exports.ERROR_STATUS_BUSY = 500;

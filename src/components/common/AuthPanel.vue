@@ -25,11 +25,10 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { ElDialog } from 'element-plus';
-import { getBaseUrlAuth } from '@/utils';
+import { getSiteOrigin } from '@/utils/site';
 import { getCookie } from 'typescript-cookie';
 import QrCode from 'vue-qrcode';
-import { ROUTE_SITE_INDEX } from '@/router';
-
+const ROUTE_SITE_INDEX = 'site-index';
 export default defineComponent({
   name: 'AuthPanel',
   components: {
@@ -44,7 +43,7 @@ export default defineComponent({
   },
   computed: {
     iframeUrl() {
-      return `${getBaseUrlAuth()}/auth/login?inviter_id=${this.inviterId}`;
+      return `${getSiteOrigin()}/auth/login?inviter_id=${this.inviterId}`;
     },
     inviterId() {
       // if forceInviterId is set, then use forceInviterId
