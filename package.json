@@ -12,7 +12,7 @@
   "scripts": {
     "dev": "vite --host",
     "build": "npm run build:web",
-    "build:web": "vite build"
+    "build:web": "cross-env VITE_SURFACE=web vue-tsc -b && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
