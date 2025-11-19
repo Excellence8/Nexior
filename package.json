@@ -1,6 +1,6 @@
 {
   "name": "@acedatacloud/nexior",
-  "version": "3.20.2",
+  "version": "3.20.3",
   "scripts": {
     "build": "npm run build:web",
     "build:web": "vite build"
