@@ -7,14 +7,11 @@ export default defineConfig({
   base: '/',
   build: {
     outDir: 'dist',
-    assetsDir: 'assets'
+    emptyOutDir: true
   },
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src')
     }
-  },
-  server: {
-    host: true
   }
 })
