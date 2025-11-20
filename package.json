@@ -49,3 +49,10 @@
     "node": "20.x"
   }
 }
+{
+  "scripts": {
+    "dev": "vite --port 8084",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+}
