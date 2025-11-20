@@ -1,13 +1,1 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.BASE_HOST_API = exports.BASE_HOST_AUTH = exports.BASE_HOST_HUB = exports.BASE_HOST_PLATFORM = exports.BASE_URL_API = exports.BASE_URL_AUTH = exports.BASE_URL_HUB = exports.BASE_URL_PLATFORM = exports.isTest = void 0;
-exports.isTest = window.location.origin === 'https://hub-test.acedata.cloud';
-exports.BASE_URL_PLATFORM = exports.isTest ? 'https://platform-test.acedata.cloud' : 'https://platform.acedata.cloud';
-exports.BASE_URL_HUB = exports.isTest ? 'https://hub-test.acedata.cloud' : 'https://hub.acedata.cloud';
-exports.BASE_URL_AUTH = exports.isTest ? 'https://auth-test.acedata.cloud' : 'https://auth.acedata.cloud';
-exports.BASE_URL_API = exports.isTest ? 'https://api-test.acedata.cloud' : 'https://api.acedata.cloud';
-exports.BASE_HOST_PLATFORM = new URL(exports.BASE_URL_PLATFORM).host;
-exports.BASE_HOST_HUB = new URL(exports.BASE_URL_HUB).host;
-exports.BASE_HOST_AUTH = new URL(exports.BASE_URL_AUTH).host;
-exports.BASE_HOST_API = new URL(exports.BASE_URL_API).host;
-export const isTest = process.env.NODE_ENV === 'test';
+export const isTest = process.env.NODE_ENV === "test";

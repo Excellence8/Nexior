@@ -1,32 +1,32 @@
-import { type ConfigEnv, defineConfig, loadEnv } from 'vite';
-import vue from '@vitejs/plugin-vue';
-import replace from '@rollup/plugin-replace';
-import * as path from 'path';
+﻿import { type ConfigEnv, defineConfig, loadEnv } from "vite";
+import vue from "@vitejs/plugin-vue";
+import replace from "@rollup/plugin-replace";
+import * as path from "path";
 
 export default defineConfig((config: ConfigEnv) => {
   process.env = { ...process.env, ...loadEnv(config.mode, process.cwd()) };
   return {
     server: {
-      host: 'localhost',
+      host: "localhost",
       port: 8084,
       proxy: {
-        '/api/v1/auth': {
+        "/api/v1/auth": {
           target: process.env.VITE_BASE_URL_AUTH,
           changeOrigin: true
         },
-        '/api/v1/users': {
+        "/api/v1/users": {
           target: process.env.VITE_BASE_URL_AUTH,
           changeOrigin: true
         },
-        '/oauth2/v1/token': {
+        "/oauth2/v1/token": {
           target: process.env.VITE_BASE_URL_AUTH,
           changeOrigin: true
         },
-        '/api': {
+        "/api": {
           target: process.env.VITE_BASE_URL_PLATFORM,
           changeOrigin: true
         },
-        '/static': {
+        "/static": {
           target: process.env.VITE_BASE_URL_PLATFORM,
           changeOrigin: true
         }
@@ -40,8 +40,11 @@ export default defineConfig((config: ConfigEnv) => {
     ],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, './src')
+        "@": path.resolve(__dirname, "./src")
       }
+    },
+    optimizeDeps: {
+      include: ["json-logic-js", "psl", "uuid"]
     }
   };
 });
