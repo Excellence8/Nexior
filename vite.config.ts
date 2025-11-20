@@ -4,7 +4,7 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [vue()],
-  base: './',
+  base: '/',  // 改为根路径
   build: {
     outDir: 'dist'
   },
