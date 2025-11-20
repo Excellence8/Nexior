@@ -1,4 +1,14 @@
-﻿import { type ConfigEnv, defineConfig, loadEnv } from "vite";
+﻿// cache-bust: 1
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+
+export default defineConfig({
+  plugins: [vue()],
+  base: './',
+  build: {
+    outDir: 'dist'
+  }
+})                                                                                                                                       import { type ConfigEnv, defineConfig, loadEnv } from "vite";
 import vue from "@vitejs/plugin-vue";
 import replace from "@rollup/plugin-replace";
 import * as path from "path";
