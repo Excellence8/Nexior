@@ -6,11 +6,15 @@ export default defineConfig({
   plugins: [vue()],
   base: '/',
   build: {
-    outDir: 'dist'
+    outDir: 'dist',
+    assetsDir: 'assets'
   },
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src')
     }
+  },
+  server: {
+    host: true
   }
 })
